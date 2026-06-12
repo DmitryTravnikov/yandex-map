@@ -1,5 +1,6 @@
 extends ../templates/page/page
 //- include ../components/welcome/welcome
+include ../components/yandex-map/yandex-map
 
 block head
   - const pageTitle = "yandex-map";
@@ -10,3 +11,4 @@ block content
   //- +welcome({
   //-   message: 'Welcome! <br/> Happy coding!'
   //- })
+  +yandex-map
