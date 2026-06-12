@@ -2,6 +2,27 @@
 @import '../../scss/mixins';
 // @import '~bootstrap/scss/bootstrap-reboot';
 
+.map {
+  width: 100%;
+  height: 600px;
+}
+
+.balloon-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.balloon-flex__img {
+  width: 100px;
+  height: 100px;
+}
+
+.balloon-flex__text {
+  width: auto;
+  padding-left: 10px;
+}
+
 // Bootstrap Media Queries
 // @include media-breakpoint-up(sm) {}
 // @include media-breakpoint-up(md) {}
