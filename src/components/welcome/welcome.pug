@@ -1,0 +1,7 @@
+mixin welcome(props = {})
+  - const { message } = props;
+
+  .welcome
+    .welcome__content
+      img.welcome__logo(style="width: 200px;" src=require('../components/welcome/img/webpack-logo.png'), alt="logo")
+      h3.welcome__headline!= message

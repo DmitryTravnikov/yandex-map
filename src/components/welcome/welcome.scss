@@ -1,0 +1,47 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+// @import '~bootstrap/scss/bootstrap-reboot';
+
+.welcome {
+  height: auto;
+  padding-top: 3%;
+  @media only screen and (min-width: 768px) {
+    @include flex(row, wrap, center, center);
+    padding-top: 0;
+    height: 100vh;
+  }
+  &__content {
+    @include flex(column, wrap, flex-start, center);
+  }
+  &__headline {
+    width: auto;
+    margin: 0;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    @media only screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+}
+
+// Bootstrap Media Queries
+// @include media-breakpoint-up(sm) {}
+// @include media-breakpoint-up(md) {}
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
+// @include media-breakpoint-up(xxl) {}
+
+// Media Queries
+@media only screen and (min-width: 576px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1400px) {
+}
+
+// * {@include outline()}

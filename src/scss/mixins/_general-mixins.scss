@@ -1,0 +1,47 @@
+@import '../variables';
+
+@function toRem($value) {
+	$remValue: calc($value / 16) + rem;
+	@return $remValue;
+}
+
+@mixin centerer($axis: "both"){
+	position:absolute;
+	@if $axis == "y"{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	@if $axis == "x"{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@if $axis == "both"{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+@mixin wrapper($width: 90%, $height: auto) {
+	width: $width;
+	height: $height;
+	margin: 0 auto;
+}
+
+@mixin flex($flex-direction: row, $flex-wrap: wrap, $justify-content: flex-start, $align-items: flex-start) {
+	display: flex;
+	flex-direction: $flex-direction;
+	flex-wrap: $flex-wrap;
+	justify-content: $justify-content;
+	align-items: $align-items;
+}
+
+@mixin outline($color: $blue) {
+	outline: 2px solid rgba($color, .6);
+	outline-offset: -2px;
+}
+
+@mixin size($width: 100px, $height: 100px) {
+	width: $width;
+	height: $height;
+}
