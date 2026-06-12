@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+// @import '~bootstrap/scss/bootstrap-reboot';
+
+// Bootstrap Media Queries
+// @include media-breakpoint-up(sm) {}
+// @include media-breakpoint-up(md) {}
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
+// @include media-breakpoint-up(xxl) {}
+
+// Media Queries
+@media only screen and (min-width: 576px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1400px) {
+}
+
+// * {@include outline()}
